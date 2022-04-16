@@ -14,6 +14,8 @@ script:
 
 deploy:
   provider: elasticbeanstalk
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
   region: "ap-northeast-2"
   app: "docker-react-app"
   env: "Learndockerandcienv-env"
@@ -21,8 +23,6 @@ deploy:
   bucket_path: "docker-react-app"
   on:
     branch: master
-access_key_id: $AWS_ACCESS_KEY
-secret_access_key: $AWS_SECRET_KEY
 
 after_success:
   - echo "Test Success"
