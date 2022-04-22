@@ -17,8 +17,8 @@ deploy:
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
   region: "ap-northeast-2"
-  app: "learn-docker-and-CI-env"
-  env: "Learndockerandcienv-env"
+  app: "docker-react-app"
+  env: "Dockerreactapp-env"
   bucket_name: "elasticbeanstalk-ap-northeast-2-740771697690"
   bucket_path: "docker-react-app"
   on:
